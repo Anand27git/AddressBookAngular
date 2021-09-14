@@ -8,8 +8,9 @@ import { HomeComponent } from './component/home/home.component';
 import { AddComponent } from './component/add/add.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-
-
+import { MatModule } from './material/mat/mat.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,9 +20,12 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'address-book';
+  checkEmailNotTaken(value:any,personId: string){
+    throw new Error ('Method not implemented');
+  }
+  title = 'addressbook';
 }

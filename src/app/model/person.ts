@@ -1,10 +1,10 @@
 export class Person {
-    id!: number;
-    fullName!: String;
+    personId!: number;
+    name!: String;
     address!: String;
     city!: String; 
     state!: String;
-    emailId!: String;
-    zip!: Number;
-    phoneNumber!: String;
+    email!: String;
+    zipcode!: String;
+    contactno!: String;
 }

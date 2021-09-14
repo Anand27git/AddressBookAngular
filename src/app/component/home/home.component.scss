@@ -1,5 +1,6 @@
 $color-white            : #fff;
-$button-background-color: #0a71c5;
+$button-background-color:rgb(68, 133, 231);
+
 .main-content {
     display         : flex;
     flex-direction  : column;
@@ -31,8 +32,6 @@ $button-background-color: #0a71c5;
             color          : #fff;
             opacity        : 1;
             background     : $button-background-color 0% 0% no-repeat padding-box;
-            border         : none;
-            border-radius  : 5px;
             padding        : 5px 18px;
             outline        : none;
             cursor         : pointer;
@@ -60,4 +59,8 @@ td,
 th {
     text-align: left;
     padding   : 5px 15px;
+}
+.tr-style{
+    background-color: white;
+    
 }

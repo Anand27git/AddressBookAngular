@@ -1,11 +1,18 @@
+<!------------------------------
+* 
+*Author:Anand
+*Purpose:Home Page of address book
+*Page:homePage.html
+*
+--------------------------------->
 <app-header></app-header>
 <div class="main-content">
     <div class="header-content">
         <div class="person-detail-text">
-            Person Details <div class=""></div>
+            Person Details
         </div>
-        <a class="add-button" routerLink="">
-            <img src="../../../assets/assets/icons/add-24px.svg" alt="">Add Person
+        <a class="add-button" routerLink="/add">
+            <img src="../assets/plus.svg" alt="Add Person Logo">Add Person
         </a>
     </div>
     <div class="table-main">
@@ -19,17 +26,17 @@
                 <th>Phone Number</th>
                 <th></th>
             </tr>
-            <tr *ngFor="let personData of personDetails" >
-                <td>{{personData.fullName}}</td>
+            <tr *ngFor="let personData of personDetails">
+                <td>{{personData.name}}</td>
                 <td>{{personData.address}}</td>
                 <td>{{personData.city}}</td>
                 <td>{{personData.state}}</td>
-                <td>{{personData.zip}}</td>
-                <td>{{personData.phoneNumber}}</td>
+                <td>{{personData.zipcode}}</td>
+                <td>{{personData.contactno}}</td>
                 <td></td>
                 <td>
-                    <img id="" src="../assets/delete.svg" alt="delete" (click)="remove(personData.id)">
-                    <img id="" src="../assets/create.svg" alt="edit">
+                    <img id="{{personData.personId}}" src="../assets/delete.svg" alt="delete" (click)="remove(personData.personId)">
+                    <img id="{{personData.personId}}" src="../assets/create.svg" alt="edit" (click)="update(personData)">
                 </td>
             </tr>
         </table>
